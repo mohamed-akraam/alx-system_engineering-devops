@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -da */ . .. | wc
+find . -type d -not \( -name "." -o -name ".." \) | wc -l
